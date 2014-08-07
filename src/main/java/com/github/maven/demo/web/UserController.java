@@ -14,6 +14,8 @@ public class UserController {
     @RequestMapping(value="/getUser.do")  
     public ModelAndView getUser(HttpServletRequest request,HttpServletResponse response){
     	String name = request.getParameter("name");
+    	
+    	//再加点东西
     	return new ModelAndView("index","name",name);
     }
 }
