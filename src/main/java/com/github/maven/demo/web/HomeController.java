@@ -25,6 +25,8 @@ public class HomeController {
     @RequestMapping(value="/hello.do")  
     public ModelAndView hello(HttpServletRequest request,HttpServletResponse response){
     	String name = request.getParameter("name");
+    	
+    	System.out.println(name);
     	return new ModelAndView("index","name",name);
     } 
 }
