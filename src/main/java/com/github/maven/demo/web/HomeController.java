@@ -27,6 +27,7 @@ public class HomeController {
     	String name = request.getParameter("name");
     	
     	System.out.println(name);
+    	log.info(name + "访问了系统");
     	return new ModelAndView("index","name",name);
     } 
 }
