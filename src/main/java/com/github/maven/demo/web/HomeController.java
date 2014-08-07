@@ -25,7 +25,6 @@ public class HomeController {
     @RequestMapping(value="/hello.do")  
     public ModelAndView hello(HttpServletRequest request,HttpServletResponse response){
     	String name = request.getParameter("name");
-    	log.info(name + "访问了系统");
     	return new ModelAndView("index","name",name);
     } 
 }
