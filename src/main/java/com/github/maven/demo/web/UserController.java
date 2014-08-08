@@ -18,4 +18,9 @@ public class UserController {
     	//再加点东西
     	return new ModelAndView("index","name",name);
     }
+    
+    @RequestMapping(value="/saveUser.do")  
+    public ModelAndView saveUser(HttpServletRequest request,HttpServletResponse response){
+    	return null;
+    }
 }
