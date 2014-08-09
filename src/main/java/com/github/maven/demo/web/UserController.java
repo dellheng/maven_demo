@@ -23,4 +23,10 @@ public class UserController {
     public ModelAndView saveUser(HttpServletRequest request,HttpServletResponse response){
     	return null;
     }
+    
+    @RequestMapping(value="/deleteUser.do")  
+    public ModelAndView deleteUser(HttpServletRequest request,HttpServletResponse response){
+    	//TODO
+    	return null;
+    }
 }
