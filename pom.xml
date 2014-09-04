@@ -50,7 +50,8 @@
             <artifactId>jgitflow-maven-plugin</artifactId>
             <version>1.0-m4</version>
             <configuration>
-                <!-- see goals wiki page for configuration options -->
+                <username>${github-username}</username>
+	            <password>${github-password}</password>
             </configuration>
         </plugin>			
 		</plugins>
